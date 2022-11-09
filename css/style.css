@@ -619,18 +619,6 @@ video {
   left: -0.25rem;
 }
 
-.top-0{
-  top: 0px;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.left-\[-100\%\]{
-  left: -100%;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -680,12 +668,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .mb-6{
@@ -788,32 +776,8 @@ video {
   display: none;
 }
 
-.aspect-\[4\/3\]{
-  aspect-ratio: 4/3;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
 .h-full{
   height: 100%;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.max-h-96{
-  max-height: 24rem;
-}
-
-.max-h-80{
-  max-height: 20rem;
-}
-
-.max-h-12{
-  max-height: 3rem;
 }
 
 .w-full{
@@ -824,8 +788,8 @@ video {
   width: 400px;
 }
 
-.w-\[1\/2\]{
-  width: 1/2;
+.w-10{
+  width: 2.5rem;
 }
 
 .flex-shrink{
@@ -878,6 +842,10 @@ video {
 
 .transform-none{
   transform: none;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .touch-auto{
@@ -1699,9 +1667,9 @@ video {
   border-style: none;
 }
 
-.bg-white{
+.bg-\[\#4A4E69\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(74 78 105 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -1709,9 +1677,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#4A4E69\]{
+.bg-black{
   --tw-bg-opacity: 1;
-  background-color: rgb(74 78 105 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
@@ -1824,10 +1792,6 @@ video {
      object-fit: scale-down;
 }
 
-.p-0{
-  padding: 0px;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1836,6 +1800,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-16{
@@ -1851,11 +1820,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pt-16{
@@ -1927,6 +1891,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1935,11 +1904,6 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -2019,6 +1983,16 @@ video {
   color: rgb(34 34 59 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2028,9 +2002,14 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-white{
+.text-gray-500{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-slate-500{
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2333,6 +2312,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2356,9 +2349,15 @@ body{
   font-family: Poppins, sans-serif;
 }
 
-.hover\:scale-95:hover{
-  --tw-scale-x: .95;
-  --tw-scale-y: .95;
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2425,10 +2424,6 @@ body{
 }
 
 @media (min-width: 768px){
-  .md\:visible{
-    visibility: visible;
-  }
-
   .md\:block{
     display: block;
   }
